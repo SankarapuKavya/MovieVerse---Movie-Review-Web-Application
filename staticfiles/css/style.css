@@ -1,0 +1,67 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.hero-section {
+    padding: 120px 0;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba")
+        center/cover;
+    color: white;
+}
+
+.movie-card {
+    border: none;
+    overflow: hidden;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.movie-poster {
+    height: 380px;
+    object-fit: cover;
+}
+
+.no-poster {
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dee2e6;
+    font-size: 70px;
+}
+
+.detail-no-poster {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dee2e6;
+    border-radius: 10px;
+    font-size: 100px;
+}
+
+.rating-box {
+    font-weight: 600;
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+footer {
+    margin-top: auto;
+}
